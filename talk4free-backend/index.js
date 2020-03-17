@@ -5,9 +5,19 @@ const socketIo = require("socket.io");
 const app = express();
 const checkAuth = require("./api/middleware/check-auth");
 
+/* calling routes */
+const routeRooms = require("./api/rooms/rooms").route;
+const routeUsers = require("./api/users/users").route;
+const routeReports = require("./api/reports/reports").route;
+
 /* configuration */
 app.use(express.json());
 app.use(cors());
+
+/* endpoints prefix */
+app.use("/api/rooms", checkAuth, routeRooms);
+app.use("/api/users", checkAuth, routeUsers);
+app.use("/api/reports", checkAuth, routeReports);
 
 /* socket.io*/
 
