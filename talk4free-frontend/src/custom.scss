@@ -1,0 +1,36 @@
+// Override default variables before the import
+$theme-colors: (
+  "primary": #48bf84,
+  "danger": #f2c006,
+  "dark": #0d2128
+);
+
+$border-radius: 2rem;
+
+.jumbotron {
+  background-color: #0d2128 !important;
+  color: #fff;
+  border-radius: 0px !important;
+  a {
+    font-size: 16px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 600;
+    i {
+      margin-right: 5px;
+    }
+  }
+  h1 {
+    margin-bottom: 1.5rem;
+    line-height: 1;
+    font-size: 4.5rem;
+    font-weight: 600;
+  }
+}
+
+.display-4 {
+  font-weight: 600 !important;
+}
+// Import Bootstrap and its default variables
+@import "~bootstrap/scss/bootstrap.scss";

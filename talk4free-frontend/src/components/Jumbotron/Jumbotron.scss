@@ -1,0 +1,40 @@
+.jumbotron {
+  margin-top: 1rem;
+  //   background-image: url(./intro-img2.jpg);
+  //   /* Set a specific height */
+  //   //   height: 48rem;
+
+  //   /* Create the parallax scrolling effect */
+  //   //   background-attachment: fixed;
+  //   background-position: center;
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  .callToActions {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    .btn {
+      display: inherit;
+      align-items: center;
+      padding: 8px 20px;
+      svg {
+        margin-left: 5px;
+      }
+    }
+  }
+  .introImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 20rem;
+      margin-left: 3rem;
+      transition: 0.5s;
+
+      //   overflow: hidden;
+      &:hover {
+        transform: translateY(-20px);
+      }
+    }
+  }
+}

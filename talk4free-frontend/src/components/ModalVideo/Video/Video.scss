@@ -1,0 +1,88 @@
+.modal {
+  .video {
+    justify-content: center;
+    .publisher {
+      text-align: center;
+      .OTPublisherContainer {
+        .OT_name {
+          margin-left: 24px;
+          display: flex;
+          justify-content: center;
+        }
+        // width: 20rem !important;
+        // height: 20rem !important;
+        // margin: auto;
+      }
+    }
+    // .subscriber {
+    //   text-align: center;
+
+    //   .OTSubscriberContainer {
+    //     width: 20rem !important;
+    //     height: 20rem !important;
+    //     margin: auto;
+    //   }
+    // }
+    .controls {
+      display: flex;
+      justify-content: center;
+      button {
+        border-radius: 25px;
+        transition: 0.2s;
+        width: 50px;
+        height: 50px;
+        margin-top: 10px;
+        svg {
+          transform: rotate(224deg);
+        }
+
+        &:hover {
+          transform: translateY(-5px);
+        }
+      }
+      .controlsBtn {
+        margin: 10px;
+        background-color: #efefef;
+        border-radius: 25px;
+        transition: 0.2s;
+        &:hover {
+          background-color: #dad7d7;
+          transform: translateY(-5px);
+        }
+        label {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0px;
+          width: 50px;
+          height: 50px;
+          span {
+            font-size: 20px;
+            text-align: center;
+          }
+          input {
+            position: absolute;
+            top: -20rem;
+            opacity: 0;
+            &:checked + span {
+              color: #48bf84;
+            }
+          }
+        }
+      }
+    }
+  }
+  .chat {
+    padding: 0px;
+  }
+}
+
+.connectionStatus {
+  padding-top: 20px;
+  margin-left: 5%;
+  font-size: 1.5em;
+}
+
+#error {
+  color: red;
+}

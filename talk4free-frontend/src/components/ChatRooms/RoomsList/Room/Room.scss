@@ -1,0 +1,62 @@
+.room-box {
+  height: fit-content;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 2rem;
+  margin: 10px;
+  min-width: 23% !important;
+  max-width: 23% !important;
+  box-shadow: 0.5rem 0.5rem 0 rgba(233, 236, 239, 0.5);
+  padding-top: 20px;
+  transition: 0.3s;
+  &:hover {
+    box-shadow: 0.5rem 0.5rem 0 rgba(233, 236, 239, 1.2);
+    transform: translateY(-10px);
+  }
+  .room-box-header {
+    pointer-events: none;
+    justify-content: space-around;
+    margin-top: 15px;
+    font-size: 14px;
+    // font-weight: 600;
+    font-style: italic;
+    color: rgb(114, 111, 111);
+    span {
+      font-size: 15px;
+      font-style: initial;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-right: 10px;
+    }
+  }
+  .room-box-body {
+    justify-content: center;
+    .participant {
+      width: 50px;
+      height: 50px;
+      background-color: #3c3ec9;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 100%;
+      margin: 2px;
+      &:hover {
+        box-shadow: 0 0 0 2pt #48bf84;
+        // border: 3px solid #48bf84;
+        cursor: pointer;
+      }
+    }
+  }
+  .room-box-footer {
+    justify-content: center;
+    margin: 20px;
+    button {
+      display: flex;
+      font-size: 16px;
+      padding-left: 20px;
+      padding-right: 20px;
+      font-weight: 600;
+      i {
+        margin-right: 5px;
+      }
+    }
+  }
+}
