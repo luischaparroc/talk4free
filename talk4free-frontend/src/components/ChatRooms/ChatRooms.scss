@@ -1,0 +1,19 @@
+.chatRooms {
+  padding: 3rem 0px 2rem 0px;
+
+  text-align: center;
+  .lead {
+    margin: 30px 10px;
+    a {
+      font-weight: 500;
+    }
+  }
+  button {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    svg {
+      margin-left: 5px;
+    }
+  }
+}
