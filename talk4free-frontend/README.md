@@ -20,17 +20,111 @@ People can exchange languages and culture, make friends and meet up people aroun
 
 Talk4Free was born out of need to practice a non-native language. As software engineers from Colombia, we often read and listen content and documention in English, but we put aside our speaking skills. We started Talk4Free to practice English, but we realized that this application can have the potential to be the digital place where you can **practice any language.**
 
-## Technologies used :wrench:
+## How it wors 💡
 
-- [Node.js](https://nodejs.org/en/)
-- [Express.js](https://expressjs.com/es/)
 - [React.js](https://reactjs.org/)
 - [Bootstrap](https://getbootstrap.com/)
 - [OpenTok](https://tokbox.com/)
-- [Socket.IO](https://socket.io/)
-- [MySQL](https://www.mysql.com/)
-- [Amazon Web Services](https://aws.amazon.com/)
 - [Gmail API](https://developers.google.com/gmail/api)
+
+### React 🔥
+For the front end part we used ReactJS which is a Javascript library that allows us to write JSX code into out applications, allowing us to control the rendering of components individually.
+```javascript
+import React, { useState } from "react";
+
+const Home = props => {
+  const [rooms, setRooms] = useState("");
+  const [users, setUsers] = useState({});
+```
+### Bootstrap and SASS📚
+Combined with CSS libraries like bootstrap we could give Talk4Free a very light and cool look. Bootstrap allows us to have control over the positioning of elements into the DOM, also cmbinend with SASS we can have a so much organized code structure so it can be understood and mantained easily
+```javascript
+import { Container, Button } from "react-bootstrap";
+```
+```css
+.chatRooms {
+  padding: 3rem 0px 2rem 0px;
+
+  text-align: center;
+  .lead {
+    margin: 30px 10px;
+    a {
+      font-weight: 500;
+    }
+  }
+  button {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    svg {
+      margin-left: 5px;
+    }
+  }
+}
+```
+
+### OpenTok (Where the magic happens!) 🎩
+
+For the RTC (Real Time Communication) part, we implemented a ver useful tool called OpenTok. OpenTok allows us to make the connections peer to peer trought their server so they can communicate in real time. Opentok gave us an API_SECRET_KEY which we can use to create sessions (Rooms) and tokens for each user insterested in joining that session. Every token is unique an can be only used for the room it was created for. Here a grapich example:
+
+<p align="center"><img src="https://tokbox.com/developer/img/infographics/opentok-components@2x.png" width="480" height="360" alt="videocalls" align="middle"></p>
+
+```javascript
+const CreateSessionId = async () => {
+  const token = getJWT();
+  const settings = {
+    method: "POST",
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/x-www-form-urlencoded",
+      "X-OPENTOK-AUTH": token
+    },
+    body: {
+      archiveMode: "always",
+      "p2p.preference": "disabled"
+    }
+  };
+  let sessionId = "";
+  try {
+    await fetch(`https://api.opentok.com/session/create`, settings)
+      .then(res => res.json())
+      .then(res => (sessionId = res[0].session_id));
+  } catch (e) {
+    console.log(e);
+  }
+  return sessionId;
+};
+```
+
+### Google API 🔑
+
+For loggin in we used the API from google which is very easy to use. You send them the email, and google hanles authenticacion for us, returning back an objec with all the information we need (name, email, profile picture etc):
+
+```javascript
+<GoogleLogin
+  clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}
+  render={renderProps => (
+    <React.Fragment>
+      <Button
+        variant="primary"
+        // className="ml-5"
+        id="signInBtn"
+        onClick={renderProps.onClick}
+        disabled={renderProps.disabled}
+      >
+        {this.state.isSignedIn ? this.state.userName : "Sign In"}
+        <FaSignInAlt />
+      </Button>
+    </React.Fragment>
+  )}
+  buttonText="Login"
+  onSuccess={this.responseGoogle}
+  onFailure={this.responseGoogle}
+  isSignedIn={true}
+  cookiePolicy={"single_host_origin"}
+/>
+```
+---
 
 ## Installation :construction_worker:
 
