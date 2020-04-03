@@ -1,68 +1,76 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Talk4Free :telephone_receiver: 
 
-## Available Scripts
+### Practice languages at anytime.
 
-In the project directory, you can run:
+<p align="center"><img src="https://talk4free.live/static/media/logo10x10.e15bb8fb.png" width="300" height="300" alt="icon" align="middle"></p>
 
-### `npm start`
+**Talk4Free** is created to talk to people around the world in many languages such as English, Mandarin, Spanish, French, German, Italian, Portuguese, Arabic, Russian, Japanese, among others.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+People can exchange languages and culture, make friends and meet up people around the world.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+**See it live:** https://talk4free.live/
 
-### `npm test`
+## Team :wave:
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Michael Sosa - [GitHub](https://github.com/mikesosa) & [LinkedIn](https://www.linkedin.com/in/mike-sosa/)
+* Jorge Zafra - [GitHub](https://github.com/jorgezafra94) & [LinkedIn](https://www.linkedin.com/in/jorge-enrique-zafra-ria%C3%B1o-49268193/)
+* Luis Chaparro - [GitHub](https://github.com/luischaparroc) & [LinkedIn](https://www.linkedin.com/in/luischaparroc/)
 
-### `npm run build`
+## Story :book:
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Talk4Free was born out of need to practice a non-native language. As software engineers from Colombia, we often read and listen content and documention in English, but we put aside our speaking skills. We started Talk4Free to practice English, but we realized that this application can have the potential to be the digital place where you can **practice any language.**
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Technologies used :wrench:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [Node.js](https://nodejs.org/en/)
+- [Express.js](https://expressjs.com/es/)
+- [React.js](https://reactjs.org/)
+- [Bootstrap](https://getbootstrap.com/)
+- [OpenTok](https://tokbox.com/)
+- [Socket.IO](https://socket.io/)
+- [MySQL](https://www.mysql.com/)
+- [Amazon Web Services](https://aws.amazon.com/)
+- [Gmail API](https://developers.google.com/gmail/api)
 
-### `npm run eject`
+## Installation :construction_worker:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Follow the next steps in the following order:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Fork the repository
+2. Be sure there are not processes running in the 3000 and 5000 ports.
+3. Go to back-end folder, install packages with `npm install` and with `npm start`
+4. Go to fron-end folder, install packages with `npm install` and run with `npm start`
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Usage :rocket:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Quick and easy log in.
 
-## Learn More
+Without creating a user profile (username, password, etc), you can sign in to Talk4Free using your Gmail account. Your information will be loaded automatically.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<p align="center"><img src="https://github.com/luischaparroc/talk4free/blob/master/talk4free-frontend/public/quick-login.gif" width="480" height="280" alt="quick-login" align="middle"></p>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Create or join custom rooms.
 
-### Code Splitting
+You may define the language and maximum number of users when creating a room, or you may join an available room of your choice. There are +20 languages you can choose from. Talk4Free rooms can have from 2 to 5 users.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+<p align="center"><img src="https://github.com/luischaparroc/talk4free/blob/master/talk4free-frontend/public/room.gif" width="480" height="360" alt="rooms" align="middle"></p>
 
-### Analyzing the Bundle Size
+### Multiple options in a video call.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+You can enable or disable the audio and video on your video calls. You can share your screen with other participants. Also, there is a chat in each room. Talk4Free works in real time.
 
-### Making a Progressive Web App
+<p align="center"><img src="https://github.com/luischaparroc/talk4free/blob/master/talk4free-frontend/public/videocall.gif" width="480" height="360" alt="videocalls" align="middle"></p>
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+## Contributing :raised_hands:
 
-### Advanced Configuration
+Feel free to fork the repository and make pull requests.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+## Related projects :pushpin:
 
-### Deployment
+- [MazeGame](https://github.com/mikesosa/MazeGame)
+- [AirBnB Clone](https://github.com/jorgezafra94/AirBnB_clone_v3)
+- [Simple Shell](https://github.com/luischaparroc/simple_shell)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+## Licensing :memo:
 
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+MIT License
