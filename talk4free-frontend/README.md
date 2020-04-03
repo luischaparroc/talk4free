@@ -10,16 +10,6 @@ People can exchange languages and culture, make friends and meet up people aroun
 
 **See it live:** https://talk4free.live/
 
-## Team :wave:
-
-* Michael Sosa - [GitHub](https://github.com/mikesosa) & [LinkedIn](https://www.linkedin.com/in/mike-sosa/)
-* Jorge Zafra - [GitHub](https://github.com/jorgezafra94) & [LinkedIn](https://www.linkedin.com/in/jorge-enrique-zafra-ria%C3%B1o-49268193/)
-* Luis Chaparro - [GitHub](https://github.com/luischaparroc) & [LinkedIn](https://www.linkedin.com/in/luischaparroc/)
-
-## Story :book:
-
-Talk4Free was born out of need to practice a non-native language. As software engineers from Colombia, we often read and listen to content and documentation in English, but we put aside our speaking skills. We started Talk4Free to practice English, but we realized that this application can have the potential to be the digital place where you can **practice any language.**
-
 ## How it works 💡
 
 - [React.js](https://reactjs.org/)
