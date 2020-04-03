@@ -18,9 +18,9 @@ People can exchange languages and culture, make friends and meet up people aroun
 
 ## Story :book:
 
-Talk4Free was born out of need to practice a non-native language. As software engineers from Colombia, we often read and listen content and documention in English, but we put aside our speaking skills. We started Talk4Free to practice English, but we realized that this application can have the potential to be the digital place where you can **practice any language.**
+Talk4Free was born out of need to practice a non-native language. As software engineers from Colombia, we often read and listen to content and documentation in English, but we put aside our speaking skills. We started Talk4Free to practice English, but we realized that this application can have the potential to be the digital place where you can **practice any language.**
 
-## How it wors 💡
+## How it works 💡
 
 - [React.js](https://reactjs.org/)
 - [Bootstrap](https://getbootstrap.com/)
@@ -28,7 +28,7 @@ Talk4Free was born out of need to practice a non-native language. As software en
 - [Gmail API](https://developers.google.com/gmail/api)
 
 ### React 🔥
-For the front end part we used ReactJS which is a Javascript library that allows us to write JSX code into out applications, allowing us to control the rendering of components individually.
+For the front end part, we used ReactJS which is a Javascript library that allows us to write JSX code into out applications, allowing us to control the rendering of components individually.
 ```javascript
 import React, { useState } from "react";
 
@@ -37,7 +37,7 @@ const Home = props => {
   const [users, setUsers] = useState({});
 ```
 ### Bootstrap and SASS📚
-Combined with CSS libraries like bootstrap we could give Talk4Free a very light and cool look. Bootstrap allows us to have control over the positioning of elements into the DOM, also cmbinend with SASS we can have a so much organized code structure so it can be understood and mantained easily
+Combined with CSS libraries like bootstrap we could give Talk4Free a very light and cool look. Bootstrap allows us to have control over the positioning of elements into the DOM, also combined with SASS we can have a so much organized code structure so it can be understood and maintained easily
 ```javascript
 import { Container, Button } from "react-bootstrap";
 ```
@@ -65,7 +65,7 @@ import { Container, Button } from "react-bootstrap";
 
 ### OpenTok (Where the magic happens!) 🎩
 
-For the RTC (Real Time Communication) part, we implemented a ver useful tool called OpenTok. OpenTok allows us to make the connections peer to peer trought their server so they can communicate in real time. Opentok gave us an API_SECRET_KEY which we can use to create sessions (Rooms) and tokens for each user insterested in joining that session. Every token is unique an can be only used for the room it was created for. Here a grapich example:
+For the RTC (Real-Time Communication) part, we implemented a very useful tool called OpenTok. OpenTok allows us to make the connections peer to peer through their server so they can communicate in real-time. Opentok gave us an API_SECRET_KEY which we can use to create sessions (Rooms) and tokens for each user interested in joining that session. Every token is unique and can be only used for the room it was created for. Here a graphic example:
 
 <p align="center"><img src="https://tokbox.com/developer/img/infographics/opentok-components@2x.png" width="480" height="360" alt="videocalls" align="middle"></p>
 
@@ -98,7 +98,7 @@ const CreateSessionId = async () => {
 
 ### Google API 🔑
 
-For loggin in we used the API from google which is very easy to use. You send them the email, and google hanles authenticacion for us, returning back an objec with all the information we need (name, email, profile picture etc):
+For logging in we used the API from google which is very easy to use. You send them the email, and google handles authentication for us, returning an object with all the information we need (name, email, profile picture etc):
 
 ```javascript
 <GoogleLogin
@@ -151,7 +151,7 @@ You may define the language and maximum number of users when creating a room, or
 
 ### Multiple options in a video call.
 
-You can enable or disable the audio and video on your video calls. You can share your screen with other participants. Also, there is a chat in each room. Talk4Free works in real time.
+You can enable or disable the audio and video on your video calls. You can share your screen with other participants. Also, there is a chat in each room. Talk4Free works in real-time.
 
 <p align="center"><img src="https://github.com/luischaparroc/talk4free/blob/master/talk4free-frontend/public/videocall.gif" width="480" height="360" alt="videocalls" align="middle"></p>
 
